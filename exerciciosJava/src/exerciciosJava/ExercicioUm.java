@@ -1,0 +1,38 @@
+/*Faça um programa para ler as medidas da largura e comprimento de um terreno retangular com
+ * com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais.
+ * Em seguida, o programa deve mostrar o valor da área do terreno, bem como o valor do preço,
+ * ambos com duas casas decimais.
+ */
+
+
+package exerciciosJava;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioUm {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite a largura:");
+		double largura = scanner.nextDouble();
+		System.out.println("Digite o comprimento:");
+		double comprimento = scanner.nextDouble();
+		System.out.println("Valor do terreno:");
+		double metroQuadrado = scanner.nextDouble();
+		
+		double area = largura * comprimento;
+		double preco = area * metroQuadrado;
+		
+		System.out.printf("Área = %.2f%n", area);
+		System.out.printf("Preço = %.2f%n", preco);
+		//System.out.println("Área = " + area);
+		//System.out.println("Preço = " + preco);
+		scanner.close();
+
+	}
+
+}

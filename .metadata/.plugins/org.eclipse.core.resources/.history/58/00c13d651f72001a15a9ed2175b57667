@@ -1,0 +1,23 @@
+/*Faça um programa para ler dois valores inteiros, e depois mostrar na
+ * tela a soma desses números com uma mensagem explicativa
+ */
+
+package exerciciosJava;
+
+import java.util.Scanner;
+
+public class ExercicioDois {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		int valorUm = scanner.nextInt();
+		int valorDois = scanner.nextInt();
+		int soma = valorUm + valorDois;
+		
+		System.out.println("A soma dos valores é: " + soma);
+
+	}
+
+}

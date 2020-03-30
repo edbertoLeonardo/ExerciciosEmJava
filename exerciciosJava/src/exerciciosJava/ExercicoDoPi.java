@@ -1,0 +1,35 @@
+/*Faça um programa para ler o valor do raio de um círculo, e depois 
+ * mostrar o valor da área deste círculo com quatro casas decimais conforme exemplos:
+ * 
+ *  Entrada:2.00 Saída: Área = 12.5664
+ *  Entrada:100.64 Saída: Área = 31819.3103 
+ */
+
+
+package exerciciosJava;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicoDoPi {
+
+	public static void main(String[] args) {
+			
+			Locale.setDefault(Locale.US);
+			Scanner scanner = new Scanner(System.in);
+		
+		double raio;
+		double area;
+		double pi = 3.14159;
+		
+		System.out.println("Digite o valor do raio:");
+		raio = scanner.nextDouble();
+
+		area = pi * (raio * raio);
+		
+		System.out.printf("O valor da área é =%.4f%n", area);
+		scanner.close();
+
+	}
+
+}

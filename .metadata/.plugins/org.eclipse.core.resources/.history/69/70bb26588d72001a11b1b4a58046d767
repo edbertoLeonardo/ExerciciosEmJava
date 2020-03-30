@@ -1,0 +1,24 @@
+package exerciciosJava;
+
+import java.util.Scanner;
+
+public class ExercicoDoPi {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		float raio;
+		double area;
+		double pi = 3.14159;
+		
+		System.out.println("Digite o valor do raio:");
+		raio = scanner.nextFloat();
+
+		area = pi * raio * raio;
+		
+		System.out.printf("Área=%.4f%n", area);
+
+	}
+
+}

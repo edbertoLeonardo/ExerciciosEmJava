@@ -1,0 +1,28 @@
+package exerciciosJava;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioUm {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner scanner = new Scanner(System.in);
+		
+		int largura = scanner.nextInt();
+		int comprimento = scanner.nextInt();
+		int metroQuadrado = scanner.nextInt();
+		
+		int area = largura * comprimento;
+		int preco = area * metroQuadrado;
+		
+		System.out.printf("Área = %.2f%n", area);
+		System.out.printf("Preço = %.2f%n", preco);
+		//System.out.println("Área = " + area);
+		//System.out.println("Preço = " + preco);
+		scanner.close();
+
+	}
+
+}

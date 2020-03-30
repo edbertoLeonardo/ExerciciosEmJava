@@ -1,0 +1,28 @@
+/*Faça um programa para ler dois valores inteiros, e depois mostrar na
+ * tela a soma desses números com uma mensagem explicativa
+ */
+
+package exerciciosJava;
+
+import java.util.Scanner;
+
+public class ExercicioDois {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		int A, B, C, D, dif;
+
+	    A = sc.nextInt();
+	    B = sc.nextInt();
+	    C = sc.nextInt();
+	    D = sc.nextInt();
+
+	    dif = A * B - C * D;
+
+	    System.out.println("DIFERENCA = " + dif);	
+		
+		sc.close();
+	}
+}
